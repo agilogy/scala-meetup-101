@@ -16,14 +16,6 @@ public class Item {
 		return "Item [_productId=" + _productId + ", _rupees=" + _rupees + "]";
 	}
 
-	public String getProductId() {
-		return _productId;
-	}
-
-	public int getRupees() {
-		return _rupees;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
