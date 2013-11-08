@@ -2,25 +2,25 @@ package com.meetup.java;
 
 public class PurchaseProcessorFactory {
 
-	public PurchaseProcessor forPoyPol() {
-		return new PurchaseProcessor() {
+    public PurchaseProcessor forPayPal() {
+        return new PurchaseProcessor() {
 
-			@Override
-			public void process(Purchase t) {
-				// process t using PoyPol system
-			}
-		};
-	}
+            @Override
+            public void process(Purchase t) {
+                // process t using PayPal system
+            }
+        };
+    }
 
-	public PurchaseProcessor forViso() {
-		return new PurchaseProcessor() {
+    public PurchaseProcessor forVisa() {
+        return new PurchaseProcessor() {
 
-			@Override
-			public void process(Purchase t) {
-				// process t using Viso
-			}
-		};
+            @Override
+            public void process(Purchase t) {
+                // process t using Visa
+            }
+        };
 
-	}
+    }
 
 }

@@ -10,10 +10,11 @@ trait PurchaseProcessor extends Processor[Purchase]
 
 object PurchaseProcessor {
 
-  val forPoyPol = new PurchaseProcessor {
+  val forPayPal = new PurchaseProcessor {
     def process(p : Purchase) = println(p) // do real stuff here
   }
-  val forViso = new PurchaseProcessor {
+
+  val forVisa = new PurchaseProcessor {
     def process(p : Purchase) = println(p) // do real stuff here
   }
 
